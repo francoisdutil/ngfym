@@ -1,0 +1,26 @@
+<div ng-controller="SlidesController" id="slides_control">
+  <div class="hidden-xs">
+    <carousel disable-ng-animate interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img  class="shade" ng-src="{{slide.image}}">
+        <div class="carousel-caption">
+          <h4 style="text-shadow: 2px 2px #000000; color:{{slide.color}}"><span translate="banner.{{slide.title}}"></span></h4>
+          <p class="lead" style="text-shadow: 1px 1px #000000; color:{{slide.fontColorTxt}}"><span translate="banner.{{slide.tagline}}"></span></p>
+          <p class="lead" style="text-shadow: 1px 1px #000000; color:{{slide.fontColorMsg}}"><span translate="banner.{{slide.message}}"></span></p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="visible-xs">
+    <carousel disable-ng-animate interval="myInterval">
+      <slide ng-repeat="slide in slidesxs" active="slide.active">
+        <img  class="shade" ng-src="{{slide.image}}">
+        <div class="carousel-caption">
+          <h4 style="text-shadow: 2px 2px #000000; color:{{slide.color}}"><span translate="banner.{{slide.title}}"></span></h4>
+          <p class="lead" style="text-shadow: 1px 1px #000000; color:{{slide.fontColorTxt}}"><span translate="banner.{{slide.tagline}}"></span></p>
+          <p class="lead" style="text-shadow: 1px 1px #000000; color:{{slide.fontColorMsg}}"><span translate="banner.{{slide.message}}"></span></p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>

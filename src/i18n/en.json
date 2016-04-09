@@ -1,0 +1,112 @@
+{
+  "directives.language-select.Language": "Language",
+  "PAGE_TITLE": "i18n for your AngularJS applications",
+  "PAGE_CONTENT": "How to translate your AngularJS applications without page reload with angular-translate",
+
+  "global": {
+      "title": "FYM Transport",
+      "tagline": "Finest Art Service all the way",
+      "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.",
+      "menu": {
+          "home": "WELCOME",
+          "about": "ABOUT US",
+          "services": "SERVICES",
+          "locations": "LOCATIONS",
+          "schedule": "SCHEDULE",
+          "requestQuote": "REQUEST A QUOTE",
+          "contact": "CONTACT",
+          "language": "Language"
+      },
+      "language": {
+        "en": "English",
+        "fr": "Français"
+      }
+  },
+  "banner": {
+      "slide1-title": "Fine Art Care",
+      "slide1-tagline": "Fine Art Transportation and Delivery across Canada",
+      "slide1-message": "FYM Transport specialists are highly experienced handlers of fine art delivering.",
+      "slide2-title": "We’ve earned our reputation",
+      "slide2-tagline": "Moving irreplaceable artwork demands exceptional skill and experience.",
+      "slide2-message": "Whatever your requirements, from single artwork to an entire exhibition or removal, our dedicated team can help.",
+      "slide3-title": "Door to Door",
+      "slide3-tagline": "A personal touch, with experience",
+      "slide3-message": "For private collections, exhibitions, galleries, auction houses and artists."
+  },
+  "sectionNew": {
+      "button": "New Storage Service",
+      "title": "Storage Solutions",
+      "subtitle": "Storing Art Properly",
+      "para1": "We care about your items",
+      "para2": "There is no consignment too large or too small for FYM Transport Inc.. ",
+      "para3": " We provide services for shipping, and handling of single items, collections and exhibitions."
+  },
+  "sectionAbout": {
+      "para1": "FYM Transport was founded in 2005 by Francis Yvan Martin. Since 2014, the company is managed by Stéphane Daigneault and Robert Martin. We are happy to continue to provide exceptional service.",
+      "para2": "Our main focus is art transport; we can handle any logistic service regarding it. We have the solutions for the safe movement of artworks and museum objects. We can advise you in every matter regarding fine art transportation.",
+      "para3": "We endeavor to deliver on time a flawless service, based on safety and discretion. At FYM Transport, we ensure that the quality of our service meets the expectations and high demands that our customers expected of us.",
+      "para4": "Our trucks are equipped with Air ride suspension. This ensures that your shipment of delicate goods is transported carefully and safely. The system helps minimize excessive impacts from bumps on the road and major shocks that could possibly cause damage to a fragile load.",
+      "para5": "Also, our temperature controlled trucks are monitored in real time. The suitable environment preserves the quality of your artworks."
+  },
+  "sectionServices": {
+      "title1": "shipping",
+      "para1": "Whether you are seeking the quickest possible route for your consignments or the most convenient option at FYM Transport, you’ll find the solution you’re looking for.",
+      "title2": "relocation",
+      "para2": "Our services don’t stop at safely handling fine art, we also offer relocation services, from private Artworks collector to entire commercial galleries.",
+      "title3": "exhibition",
+      "para3": "Our services don’t stop at safely handling fine art, we also offer relocation services, from private Artworks collector to entire commercial galleries.",
+      "title4": "storage",
+      "para4": "FYM Transport is also offering short and long term storage temperature control facilities. For any inquiries, please email or phone us."
+  },
+  "sectionLocations": {
+      "title": "Delivering across Canada",
+      "subtitle": "We call you 24 hours before ETA (pickup / delivery)",
+      "serviceLocator": "Find quickly upcoming pickups & dropoffs for your location",
+      "download": "Get the full 12 months schedule for cities we served",
+      "btnScheduleService": "Open the FYM Services Locator Page",
+      "btnDownload": "Download the 12 months schedule",
+      "cities": {
+          "Quebec": "Quebec",
+          "Montreal": "Montreal",
+          "Ottawa": "Ottawa",
+          "Toronto": "Toronto",
+          "Winnipeg": "Winnipeg",
+          "Saskatoon": "Saskatoon",
+          "Regina": "Regina",
+          "Edmonton": "Edmonton",
+          "Calgary": "Calgary",
+          "Kelowna": "Kelowna",
+          "Vancouver": "Vancouver",
+          "Victoria": "Victoria"
+      },
+      "viewList": "View the complete list"
+  },
+  "sectionCallout": {
+      "title": "Request a Quote from FYM Transport",
+      "para": "FYM Transport’s broad range of Fine Art delivery solutions means that we can manage your shipment to and from your location. <span class='text-info'>Please contact Stéphane</span> with your requirements and we will get back to you shortly to answer your specific needs",
+      "tel": "(514) 952-9205",
+      "button": "Send us an email with your requirements"
+  },
+  "footer": {
+      "title": "Don't wait, call us to schedule <em>the finest art service all the way</em> with FYM Transport",
+      "address": "FYM Transport Inc., 3315, Fairview Rd, Oliver, British Columbia, V0H 1T5, Ph.:(514)&nbsp;952-9205, Fax:(250)&nbsp;498-0314, email: fymtransport@yahoo.com"
+  },
+  "pageSchedule": {
+      "title": "FYM Service Locator Page",
+      "direction": "Direction",
+      "location": "Location",
+      "theNextPickup": "The next pickup for",
+      "theNextDropoff": "The next delivery for",
+      "pickup": "Pickup",
+      "delivery": "Delivery",
+      "westbound": "Westbound",
+      "eastbound": "Eastbound",
+      "comingFromWest": "coming from west",
+      "comingFromEast": "coming from east",
+      "daysFromNow": "days from now",
+      "scheduled": "scheduled in",
+      "isScheduled": "is scheduled on",
+      "days": "days",
+      "search": "Search"
+  }
+}

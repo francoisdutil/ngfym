@@ -1,0 +1,54 @@
+<footer ng-controller="FooterController" id="footer" class="spa-footer">
+  <div class="container row">
+
+    <div ng-controller="BlogController" class="col-md-3">
+      <h3 class="text-center">Recent Posts</h3>
+      <ul>
+        <li ng-repeat="article in articles | orderBy:'rank'" ng-show="$index < 3">
+          <a href="{{article.url}}">{{article.title}}</a>
+          <h5>{{article.description}}</h5>
+        </li>
+      </li>
+    </div>
+
+    <div ng-controller="FeaturesController" class="col-md-3">
+      <h3 class="text-center">Recent Comments</h3>
+      <ul>
+        <li ng-repeat="feature in features | orderBy:'rank'" ng-show="$index < 3">
+          <a href="{{feature.url}}">{{feature.title}}</a>
+          <p>{{feature.description}}</p>
+        </li>
+      </li>
+    </div>
+
+    <div class="col-md-3 text-center">
+    <h3>Tags Cloud</h3>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <span ng-repeat="tag in tags | orderBy:'rank'">
+            <a href="{{tag.url}}" type="button" class="btn btn-primary btn-medium">{{tag.title}}</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 text-center">
+      <h3>ngFYM</h3>
+      <p style="padding:0 10px;" class="lead">Being able to create directives in AngularJS and dependency injection makes it easy to create components that can be shared easily between developers...</p>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-center">
+          <form method="get" class="searchform" action="#" role="search">
+            <input type="search" class="field" name="s" value="" id="s" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-xs-5 col-xs-offset-1 text-left">© 2015 FYM Transport Inc.</div>
+    <div class="col-xs-5 col-xs-offset-1 text-right"><span translate="section-footer.designedBy"></div>
+  </div>
+  <hr>
+
+
+</footer>

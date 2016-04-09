@@ -1,0 +1,51 @@
+.navbar-inverse {
+  background-color: #000;
+  border-color: #080808;
+  color: #fff;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+.navbar-inverse .navbar-brand {
+  font: 16px/1.6 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #f0f0f0;
+  letter-spacing: 2px;
+  width: 200px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.navbar-collapse.in {
+  overflow-y: hidden;
+}
+.logo-icon {
+  border: .12em solid #fff;
+  padding: .1em .4em .1em .5em;
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.navbar{
+  padding: 0;
+}
+
+.navbar-header {
+  padding-bottom: 15px;
+  overflow-y: visible;
+}
+.navbar button{
+  margin-top: 15px;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+  .navbar-inverse {
+
+    font-size: .4em;
+    font-weight: 400;
+  }
+}

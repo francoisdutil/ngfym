@@ -1,0 +1,163 @@
+<div ng-controller="MainController">
+  <section id="section-slides">
+    <div ng-include="'/app/components/slides/slides.html'"></div>
+  </section>
+
+  <div class="row">
+    <p class="lead text-center col-xs-10 col-xs-offset-1">
+      <span class="fa fa-star text-danger animated infinite rotateIn"></span>
+      <button style="font-size:1.3em" class="btn btn-success btn-large animated tada ngdialog-button ngdialog-button-primary" ng-click="showDialogNewService()">
+        <span translate="sectionNew.button"></span>
+      </button>
+      <span class="fa fa-star text-danger animated infinite rotateIn"></span>
+    </p>
+  </div>
+
+
+  <!--About Us Section  -->
+  <section id="section-about"  class="home-about">
+    <div class="home-portfolio-heading row">
+      <h1 style="margin-bottom:30px" class="text-info col-xs-10 col-xs-offset-1 text-center"><span translate="global.tagline"></span></h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <p class="lead"><span translate="sectionAbout.para1"></span></p><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <p class="text-center"><img class="circular" src="/assets/images/francis_yvan_martin.jpg" /></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <p class="lead"><span translate="sectionAbout.para2"></span></p>
+        <p class="lead"><span translate="sectionAbout.para3"></span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <p class="lead"><span translate="sectionAbout.para4"></span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <p class="lead"><span translate="sectionAbout.para5"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!--Services Section  -->
+
+  <section id="section-services" class="home-features">
+    <div class="feature text-center row">
+      <div class="col-sm-6 col-md-3">
+        <span class="text-primary fa fa-truck"></span>
+        <h2><span translate="sectionServices.title1"></span></h2>
+        <p class="text-left"><span translate="sectionServices.para1"></span></p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <span class="text-primary fa fa-road"></span>
+        <h2><span translate="sectionServices.title2"></span></h2>
+        <p class="text-left"><span translate="sectionServices.para2"></span></p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <span class="text-primary fa fa-institution"></span>
+        <h2><span translate="sectionServices.title3"></span></h2>
+        <p class="text-left"><span translate="sectionServices.para3"></span></p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <span class="text-primary fa fa-cubes"></span>
+        <h2><span translate="sectionServices.title4"></span></h2>
+        <p class="text-left"><span translate="sectionServices.para4"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!--Locations Section  -->
+
+  <section id="section-locations" class="home-locations" ng-controller="LocationsController">
+    <div class="home-locations-heading row">
+
+      <h2 class="col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-10 text-center"><span translate="sectionLocations.title"></span>
+        <span class="home-news"><br><span translate="sectionLocations.subtitle"></span></span>
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
+        <!-- <div class="row">
+          <div class="col-xs-12 col-md-6 text-center">
+            <h3 style="color: #fff;"><span translate="sectionLocations.serviceLocator"></span></h3>
+            <a type="button" href="/#/schedule" class="btn btn-info btn-large">
+              <span class="text-info fa fa-lg fa-gear"></span>&nbsp;
+              <span class="text-info" translate="sectionLocations.btnScheduleService"></span>
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-6 text-center"> -->
+            <h3 style="color: #fff;"><span translate="sectionLocations.download"></span></h3>
+            <a type="button" href="/assets/pdf/schedule.pdf" class="btn btn-info btn-large">
+              <span class="text-info fa fa-file-pdf-o"></span>&nbsp;
+              <span class="text-info" translate="sectionLocations.btnDownload"></span>
+            </a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="row">
+          <div class="col-xs-12 com-sm-4 col-md-3 text-center" ng-repeat="location in locations">
+            <figure class="locations-entry">
+              <img class="shade locations-entry-img" src="{{location.thumbnail}}" />
+              <figcaption>
+                <div>
+                  <h4><span translate="{{location.title}}"></span></h4>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Callout Section  - shows services-->
+  <section id="section-callout">
+    <div class="callout row">
+      <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+        <h1><span translate="sectionCallout.title"></span></h1>
+        <strong><h2 class="text-info"><span class="text-primary fa fa-phone"></span>&nbsp;<a href="tel:+15149529205">514-952-9205</a></h2></strong>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 lead">
+            <span><span translate="sectionCallout.para"></span><br>
+            <br></span>
+            <a class="btn btn-success btn-large" href="mailto:fymtransport@yahoo.com"><span translate="sectionCallout.button"></span></a>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <p class="text-right"><img src="/assets/images/contact.png" /></p>
+            <h5 class="text-info text-left"><span translate="footer.address"></span></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section Footer -->
+  <section id="section-contact">
+    <footer id="footer">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+          <h3 class="text-center col-xs-12"><span translate="footer.title"></span><br><br><span class="text-primary fa fa-phone"></span>&nbsp;<a href="tel:+15149529205">514-952-9205</a><br><br></h3>
+
+          <div class="row">
+            <div style="margin-bottom:20px;" class="text-center col-xs-offset-1 col-xs-10"><a type="button" class="btn btn-danger btn-large" href="mailto:fymtransport@yahoo.com"><span translate="sectionCallout.button"></span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div style="padding:20px 0;" class="text-center col-xs-offset-1 col-xs-10">© 2015 FYM Transport Inc.</div>
+      </div>
+    </footer>
+  </section>
+</div>

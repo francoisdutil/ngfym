@@ -1,0 +1,89 @@
+<div ng-controller="ScheduleController">
+	<p><br></p>
+  <p><h4 class="text-center"><td><span translate="pageSchedule.title"></span></td></h4></p>
+
+  <div class="row">
+    <div class="col-xs-10 col-md-offset-1" style="margin-bottom: 20px">
+      <div class="navbar-search pull-right">
+        <input type="text" class="span2 search-query" ng-model="searchText" placeholder="{{'pageSchedule.search' | translate}}">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+      <div class="col-xs-12 col-md-offset-1 col-md-10 text-center">
+        <div>
+          <div ng-repeat="name in selection ">
+            <p ng-show="$first" class="lead">
+              <span translate="pageSchedule.theNextPickup"></span> 
+              <span translate="sectionLocations.cities.{{name}}"></span> 
+              <span translate="pageSchedule.westbound"></span>  
+              <span translate="pageSchedule.isScheduled"></span>:
+            </p>
+            <p ng-show="$first" class="lead">
+              <span translate="pageSchedule.theNextPickup"></span> 
+              <span translate="sectionLocations.cities.{{name}}"></span> 
+              <span translate="pageSchedule.eastbound"></span>  
+              <span translate="pageSchedule.isScheduled"></span>:
+            </p>
+            <p ng-show="$first" class="lead">
+              <span translate="pageSchedule.theNextDropoff"></span> 
+              <span translate="sectionLocations.cities.{{name}}"></span> 
+              <span translate="pageSchedule.comingFromWest"></span>  
+              <span translate="pageSchedule.isScheduled"></span>:
+            </p>
+            <p ng-show="$first" class="lead">
+              <span translate="pageSchedule.theNextDropoff"></span> 
+              <span translate="sectionLocations.cities.{{name}}"></span> 
+              <span translate="pageSchedule.comingFromEast"></span>  
+              <span translate="pageSchedule.isScheduled"></span>:
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1" style="margin-bottom: 20px">
+      <p class="text-right">Pickup Location :  
+        <span><select ng-model="selectedPickupLocation" ng-options="city.name for city in cities"></select></span>
+      </p>
+    </div>
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1" style="margin-bottom: 20px">
+      <p class="text-left">Delivery Location :  
+        <span><select ng-model="selectedDeliveryLocation" ng-options="city.name for city in cities"></select></span>
+      </p>
+    </div>   
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-1 col-md-10">
+      <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="33%">Service</th>
+                    <th width="34%"><span translate="pageSchedule.location"></span></th>
+                    <th width="33%">Date</th>
+                </tr>
+            </thead>
+            <tbody class="my-repeat-animation">
+              <tr ng-controller="ScheduleController" ng-repeat="schedule in results | isFuture | filter:  ({location: selectedPickupLocation.name, service: 'pickup'} && {location: selectedDeliveryLocation.name, service: 'delivery'}) | orderBy:'date'" >
+                  <td>
+                    <span>
+                      <span translate="pageSchedule.{{ schedule.service }} "></span>    
+                    </span>
+                  </td>
+                  <td>{{ schedule.location }}</td>
+                  <td><span>{{schedule.date  | amDateFormat:'dddd, MMMM, Do, YYYY'}}</span></td>
+              </tr>
+            </tbody>
+        </table>
+       </div>
+     </div>
+   </div>
+</div>

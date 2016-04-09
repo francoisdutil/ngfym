@@ -1,0 +1,36 @@
+
+<div ng-controller="NavbarController" role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div style="height:auto;" class="navbar-header">
+
+            <a href="/#/#section-slides" offset="80" du-smooth-scroll du-scrollspy class="text-left navbar-brand">
+              <img style="width:75px;" src="/assets/images/logo-fym-yellow-white.svg" />
+            </a>
+            <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collection of nav links and other content for toggling -->
+        <div class="navbar-collapse collapse" collapse="navCollapsed">
+          <ul class="nav navbar-text navbar-nav navbar-right">
+            <li ng-click="navCollapsed = true" ng-repeat="menuItem in menuItems" data-ng-class="(menuItem.url == location.path() && 'active')"><a offset="80" du-smooth-scroll du-scrollspy href="{{menuItem.id}}"><span translate="{{ menuItem.title }}"></span></a></li>
+            <li class="dropdown" dropdown>
+              <a href="" class="dropdown-toggle" dropdown-toggle>
+                <span class="text-info" translate="global.menu.language"></span>
+                <span class="text-info caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" dropdown-menu>
+                <li ng-click="navCollapsed = false" ng-repeat="lang in menuLangs">
+                  <a ng-click="changeLanguage(lang.countryCode)"><span class="text-info">{{lang.title}}</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>

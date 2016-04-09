@@ -1,0 +1,113 @@
+{
+  "directives.language-select.Language": "Langue",
+  "PAGE_TITLE": "i18n for your AngularJS applications",
+  "PAGE_CONTENT": "How to translate your AngularJS applications without page reload with angular-translate",
+
+  "global": {
+      "title": "ngFYM",
+      "tagline": "Le meilleur service sur toute la ligne",
+      "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
+      "menu": {
+          "home": "BIENVENUE",
+          "about": "À PROPOS DE NOUS",
+          "services": "SERVICES",
+          "locations": "VILLES",
+          "schedule": "SCHEDULE",
+          "requestQuote": "DEMANDER UNE COTATION",
+          "contact": "CONTACT",
+          "language": "Langue"
+      },
+      "language": {
+        "en": "English ",
+        "fr": " French"
+      }
+  },
+  "banner": {
+      "slide1-title": "L'Art aux petits soins",
+      "slide1-tagline": "Transport et livraison d'objets d'art à travers le Canada",
+      "slide1-message": "Les spécialistes qualifiés de FYM Transport gèrent minutieusement leur transport",
+      "slide2-title": "Engagé",
+      "slide2-tagline": "Nous avons gagné notre réputation.",
+      "slide2-message": "Quels que soient vos besoins, pour une seule pièce ou pour une exposition entière, notre équipe peut vous aider.",
+      "slide3-title": "Porte à porte",
+      "slide3-tagline": "Une touche professionelle et personnalisée",
+      "slide3-message": "Pour les collections privées, les expositions, les galeries, les maisons d'enchères et les artistes."
+  },
+  "sectionNew": {
+      "button": "Nouveau service d'entreposage",
+      "title": "Solutions d'Entreposage",
+      "subtitle": "Entreposage de l'Art correctement",
+      "para1": "Nous nous soucions de vos articles",
+      "para2": "Il n'y a aucune consignation trop grande ou trop petite pour FYM Transport Inc.. ",
+      "para3": " Nous fournissons des services d'expédition, et de manipulation d'objets individuels, collections et expositions."
+  },
+  "sectionAbout": {
+      "para1": "FYM Transport a été fondé en 2005 par Francis Yvan Martin. Depuis 2014, la compagnie est administrée par Stéphane Daigneault et Robert Martin. Nous nous faisons un plaisir de continuer à vous donner un service exceptionnel.",
+      "para2": "FYM Transport se concentre au transport d'objets d'art. C'est notre expertise principale. Nous pouvons gérer tout service logistique concernant la manutention et le déplacement de pièces fragiles qui vous sont chères. Nous utilisons les solutions nécessaires pour le déplacement sécuritaire des œuvres d'art et objets de musée. Nous pouvons vous conseiller pour toutes questions concernant le transport d'objets d'art.",
+      "para3": "Notre mission consiste à livrer à temps un service sans faille, basé sur la sécurité et la discrétion. Nous nous assurons que la qualité de notre service répond aux attentes et aux exigences élevées que nos clients attendent de nous.",
+      "para4": "Nos camions sont équipés d'une suspension à air. Cela garantit que vos marchandises délicates sont transportés avec soin et en toute sécurité. Le système permet de minimiser les impacts qui pourraient causer des dommages.",
+      "para5": "Aussi, nos camions à température contrôlée sont surveillés en temps réel. L'environnement approprié préserve la qualité de vos oeuvres d'art."
+  },
+  "sectionServices": {
+      "title1": "livraison",
+      "para1": "Que vous cherchiez la route la plus rapide possible pour vos envois ou l'option la plus pratique à FYM Transport, vous trouverez la solution que vous recherchez.",
+      "title2": "relocation",
+      "para2": "Nos services ne se limitent pas à la manipulation en toute sécurité d'objets d'art, nous offrons également des services de relocalisation, du collecteur privé d'oeuvres jusqu'aux galeries et musées, à l'échelle nationale.",
+      "title3": "exposition",
+      "para3": "Quand arrive le moment de déplacer une collection de pièces vers une galerie d'art ou un musée, vous ne pouvez pas être en de meilleures mains. Nous satisfaisons nos clients pour des événements particuliers ou d'envergure, à l'échelle nationale, tout au long de l'année.",
+      "title4": "Entreposage",
+      "para4": "FYM Transport offre aussi l'entreposage à court et long terme dans des intallations dont la température est contrôlée. Pour toute demande de renseignements, s'il vous plaît envoyer un courriel ou nous téléphoner."
+  },
+  "sectionLocations": {
+      "title": "Livraison à travers le Canada",
+      "subtitle": "Nous vous appelons 24 heures avant l'heure d'arrivée estimée",
+      "serviceLocator": "Trouvez rapidement les services pour votre ville",
+      "download": "Obtenez la schedule complète de 12 mois des villes desservies.",
+      "btnScheduleService": "Ouvrir la page outil Localisateur des services FYM",
+      "btnDownload": "Télécharger la schedule de 12 mois",
+      
+      "cities": {
+          "Quebec": "Québec",
+          "Montreal": "Montréal",
+          "Ottawa": "Ottawa",
+          "Toronto": "Toronto",
+          "Winnipeg": "Winnipeg",
+          "Saskatoon": "Saskatoon",
+          "Regina": "Régina",
+          "Edmonton": "Edmonton",
+          "Calgary": "Calgary",
+          "Kelowna": "Kelowna",
+          "Vancouver": "Vancouver",
+          "Victoria": "Victoria"
+      },
+      "viewList": "Voir la liste complète"
+  },
+  "sectionCallout": {
+      "title": "Communiquez avec <strong>Stéphane</strong> pour connaître le prix de votre livraison",
+      "tel": "(514) 952-9205",
+      "para": "Solutionnez votre livraison signifie que FYM Transport gère vos envois vers et à partir de votre emplacement. <span class='text-info'>Veuillez communiquer avec Stéphane</span> concernant votre demande pour répondre à vos besoins spécifiques. Nous recommuniquerons avec vous sous peu.",
+      "button": "Envoyez-nous un courriel"
+  },
+  "footer": {
+      "title": "N'attendez plus, appelez-nous pour planifier <em>le meilleur service de l'art sur toute la ligne</em> avec FYM Transport",
+      "address": "FYM Transport Inc., 3315, Fairview Rd, Oliver, British Columbia, V0H 1T5, Tél.:(514)&nbsp;952-9205, Fax:(250)&nbsp;498-0314, , adresse courriel: fymtransport@yahoo.com"
+  },
+  "pageSchedule": {
+      "title": "Page outil localisateur des services FYM",
+      "direction": "Direction",
+      "location": "Ville",
+      "theNextPickup": "Le prochain ramassage à",
+      "theNextDropoff": "La prochaine livraison à",
+      "pickup": "Ramassage",
+      "delivery": "Livraison",
+      "westbound": "vers l'ouest",
+      "eastbound": "vers l'est",
+      "comingFromWest": "en provenance de l'ouest",
+      "comingFromEast": "en provenance de l'est",
+      "daysFromNow": "jours d'aujourd'hui",
+      "scheduled": "prévu dans",
+      "isScheduled": "est prévu pour",
+      "days": "jours",
+      "search": "Rechercher"
+  }
+}

@@ -1,0 +1,107 @@
+
+
+.home-locations {
+  background: #222;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/assets/images/monitoring.jpg);
+}
+
+Monitoring
+
+.home-locations .home-locations-heading {
+  font-size: 1.750em;
+  margin: 0 0 30px;
+}
+.home-locations .home-locations-heading {
+  color: #fff;
+  font-weight: 300;
+}
+
+.locations-entry {
+  position: relative;
+}
+
+.home-locations .locations-entry {
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.locations-entry-img {
+  width: 100%;
+  display: block;
+  margin: 15px 0;
+}
+
+.locations-entry-overlay {
+  visibility: visible;
+  opacity: 0;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: rgba(0,0,0,0.8);
+}
+
+.locations-entry-overlay-inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+}
+
+.locations-entry .locations-entry-icons {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.home-locations-heading a {
+  margin-top: 24px;
+  display: block;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff !important;
+  border: 3px solid #fff;
+  border: 3px solid rgba(255,255,255,0.6);
+  padding: 4px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.locations-entry .locations-entry-icons a {
+  font-size: 0.875em;
+  line-height: 1em;
+  display: inline-block;
+  margin-left: 2px;
+  border-radius: 2px;
+  padding: 6px 7px;
+  background: #88d082;
+  color: #fff;
+  opacity: 0.7;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+
+.locations-entry-media {
+  position: relative;
+}
